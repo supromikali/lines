@@ -1,0 +1,66 @@
+body {
+  background: rgba(0.3, 0.3, 0.3, 0.3)
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.line {
+  display: flex;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background: wheat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  box-shadow: 0px 1px 0px 0 rgba(0.3, 0.3, 0.3, 0.2);
+  border-right: 1px solid rgba(0.3, 0.3, 0.3, 0.3);
+  border-bottom: 1px solid rgba(0.3, 0.3, 0.3, 0.3);
+}
+
+
+.ball {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 50%;
+  /* credits to Simon Buisson https://codepen.io/yunntan/pen/OJOORE */
+  background: radial-gradient(circle at 12px 16px, currentcolor,black);
+}
+
+.bouncing {
+  animation: bounce .3s ease-in 0s infinite alternate;
+}
+
+@keyframes bounce {
+   0% {
+     height: 36px;
+     margin-top: -5px;
+   }
+   80% {
+     height: 36px;
+   }
+   100% {
+     height: 35px;
+     margin-top: 0;
+  }
+}
+
+.score {
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  width: 100%;
+  /* credits https://animista.net/play/text/pop-up/text-pop-up-br */
+  text-shadow: 0 1px 0 #ccc,0 2px 0 #ccc,0 3px 0 #ccc;
+  font-family: sans-serif;
+  margin-top: 12px
+}
