@@ -16,6 +16,8 @@ body {
 .cell {
   width: 60px;
   height: 60px;
+  max-width: 10.5vw;
+  max-height: 10.5vw;
   background: wheat;
   display: flex;
   align-items: center;
@@ -30,10 +32,13 @@ body {
 .ball {
   width: 36px;
   height: 36px;
+  max-width: 7.5vw;
+  max-height: 7.5vw;
   cursor: pointer;
   border-radius: 50%;
   /* credits to Simon Buisson https://codepen.io/yunntan/pen/OJOORE */
   background: radial-gradient(circle at 12px 16px, currentcolor,black);
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
 }
 
 .bouncing {
