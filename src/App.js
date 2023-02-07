@@ -92,7 +92,7 @@ const Ball = ({ active, onClick, current, value, lines }) => {
 const colors = [
   "wheat",
   "red",
-  "orange",
+  "chocolate",
   "yellow",
   "green",
   "blue",
